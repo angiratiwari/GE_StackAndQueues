@@ -20,6 +20,17 @@ public class Main {
         stack.printStack();  // Expected output: 70
         stack.pop();  // Pop 70
         System.out.println("Is Stack Empty? " + stack.isEmpty());  // Expected output: true
+
+        // Testing Queue with UC 3 and UC 4
+        Queue<Integer> queue = new Queue<>();
+
+        // UC 3: Enqueuing 56 -> 30 -> 70
+        queue.enqueue(56);
+        queue.enqueue(30);
+        queue.enqueue(70);
+        System.out.print("Queue after enqueuing 56 -> 30 -> 70: ");
+        queue.printQueue();  // Expected output: 56 30 70
+
     }
 }
 
