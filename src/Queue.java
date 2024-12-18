@@ -6,5 +6,4 @@ public class Queue<T> {
     public Queue() {
         list = new LinkedList<>();
     }
-
 }
