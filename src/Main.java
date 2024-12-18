@@ -31,6 +31,15 @@ public class Main {
         System.out.print("Queue after enqueuing 56 -> 30 -> 70: ");
         queue.printQueue();  // Expected output: 56 30 70
 
+        // UC 4: Dequeuing
+        queue.dequeue();  // Remove 56
+        System.out.print("Queue after dequeue: ");
+        queue.printQueue();  // Expected output: 30 70
+        queue.dequeue();  // Remove 30
+        System.out.print("Queue after dequeue: ");
+        queue.printQueue();  // Expected output: 70
+        queue.dequeue();  // Remove 70
+        System.out.println("Is Queue Empty? " + queue.isEmpty());  // Expected output: true
     }
 }
 
